@@ -13,7 +13,8 @@
     "@tailwindcss/vite": "^4.1.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "recharts": "^2.15.3"
+    "recharts": "^2.15.3",
+    "swiper": "^11.2.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
