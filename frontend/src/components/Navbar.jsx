@@ -1,35 +1,29 @@
-// src/components/Navbar.jsx
-
-import { FaChevronDown } from 'react-icons/fa'
+import React from "react";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="absolute top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-transparent text-white">
-      {/* Logo */}
-      <div className="flex items-center space-x-2">
-        <img src="/logo.svg" alt="FarmSight logo" className="h-8 w-8" />
-        <span className="text-xl font-bold">FarmSight</span>
+    <nav className="navbar">
+      <div className="nav-left">
+        <h2 className="logo">FarmSight</h2>
+        <span className="tagline">Smart Farming From Space</span>
       </div>
 
-      {/* Nav Links */}
-      <div className="hidden md:flex space-x-6 text-sm font-medium">
-        <a href="#" className="hover:text-indigo-300">Home</a>
-        <a href="#" className="hover:text-indigo-300">About us</a>
-        <a href="#" className="hover:text-indigo-300">Services</a>
-      </div>
+      <ul className="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
 
-      {/* Language + Login */}
-      <div className="flex items-center space-x-4">
-        <div className="flex items-center space-x-1 cursor-pointer">
-          <img src="/us-flag.png" alt="Language" className="h-4 w-6" />
-          <FaChevronDown size={10} />
-        </div>
-        <button className="bg-indigo-600 hover:bg-indigo-700 px-4 py-1.5 rounded-md text-sm font-medium text-white">
-          Sign in
-        </button>
+      <div>
+        {/*<select className="lang-dropdown">*/}
+        {/*  <option value="en">🇺🇸 EN</option>*/}
+        {/*  <option value="fr">🇫🇷 FR</option>*/}
+        {/*</select>*/}
+        <button className="sign-in-btn">Sign In</button>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
