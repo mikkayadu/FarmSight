@@ -1,29 +1,11 @@
-// import Navbar from "./components/Navbar";
-// import Sidebar from "./components/Sidebar";
-// import Dashboard from "./components/Dashboard";
-//
-// function App() {
-//   return (
-//     <div className="h-screen flex flex-col">
-//       <Navbar />
-//       <div className="flex flex-1 bg-gray-50">
-//         <Sidebar/>
-//         <Dashboard/>
-//       </div>
-//     </div>
-//   );
-// }
-//
-// export default App;
-
-import HeroSlider from './components/HeroSlider'
+import HeroCarousel from "./components/HeroCarousel.jsx";
 
 function App() {
-  return (
-    <div>
-      <HeroSlider />
-    </div>
-  )
+    return (
+        <div>
+            <HeroCarousel />
+        </div>
+    );
 }
 
 export default App
