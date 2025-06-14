@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Navbar.css";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   return (
@@ -20,7 +22,7 @@ const Navbar = () => {
         {/*  <option value="en">🇺🇸 EN</option>*/}
         {/*  <option value="fr">🇫🇷 FR</option>*/}
         {/*</select>*/}
-        <button className="sign-in-btn">Sign In</button>
+          <button><Link to="/login" className="sign-in-btn"> Sign In </Link></button>
       </div>
     </nav>
   );

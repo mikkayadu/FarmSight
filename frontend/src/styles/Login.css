@@ -1,0 +1,65 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 100vh;
+  background: url('../assets/farm2.jpg') center/cover no-repeat;
+  position: relative;
+  backdrop-filter: blur(2px);
+}
+
+.login-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* optional overlay */
+  z-index: 1;
+}
+
+.login-card {
+  /*background: white;*/
+  padding: 6rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  width: 500px;
+  text-align: center;
+  font-size: larger;
+  background-color: rgba(255, 255, 253, 0.95);
+  z-index: 2;
+}
+
+.login-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.login-card p {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin: 0.6rem 0;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #3d4cfc;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.register-link {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
