@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import HeroCarousel from "./components/HeroCarousel";
 import Navbar from "./components/Navbar";
+import FeaturesSection from "./components/FeaturesSection.jsx";
 
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -18,6 +19,7 @@ function App() {
             <>
               <Navbar />
               <HeroCarousel />
+              <FeaturesSection />
             </>
           }
         />

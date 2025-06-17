@@ -7,6 +7,10 @@ import React from "react";
 import Slider from "react-slick";
 import "../styles/HeroCarousel.css";
 
+// import farm4 from "../assets/farm4.jpg";
+// import farm5 from "../assets/farm5.jpg";
+// import farm6 from "../assets/farm6.jpg";
+
 import farm1 from "../assets/farm1.jpg";
 import farm2 from "../assets/farm2.jpg";
 import farm3 from "../assets/farm3.jpg";
@@ -22,6 +26,7 @@ const HeroCarousel = () => {
     slidesToScroll: 1,
   };
 
+  // const slides = [farm4, farm5, farm6];
   const slides = [farm1, farm2, farm3];
 
   return (

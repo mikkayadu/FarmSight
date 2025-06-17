@@ -1,5 +1,5 @@
 .navbar {
-  position: absolute;
+  position: sticky;
   top: 0;
   width: 100%;
   padding: 1.2rem 3rem;
@@ -7,9 +7,9 @@
   justify-content: space-between;
   align-items: center;
   background: transparent;
-  z-index: 100;
+  z-index: 1000;
   font-family: sans-serif;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.9);
   color: white;
 }
 
