@@ -13,7 +13,7 @@ import "../styles/HeroCarousel.css";
 
 import farm1 from "../assets/farm1.jpg";
 import farm2 from "../assets/farm2.jpg";
-import farm3 from "../assets/farm3.jpg";
+// import farm3 from "../assets/farm3.jpg";
 
 const HeroCarousel = () => {
   const settings = {
@@ -27,7 +27,7 @@ const HeroCarousel = () => {
   };
 
   // const slides = [farm4, farm5, farm6];
-  const slides = [farm1, farm2, farm3];
+  const slides = [farm1, farm2];
 
   return (
     <Slider {...settings} className="hero-slider">

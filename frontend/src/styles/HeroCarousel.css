@@ -13,7 +13,7 @@
 .hero-slider {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
 }
 
 .slide-image {
@@ -27,7 +27,7 @@
 .hero-slide {
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 60vh;
   position: relative;
 }
 
