@@ -38,7 +38,7 @@ const HeroCarousel = () => {
           <h1>Empowering Farmers. Ending Losses. Securing Futures…</h1>
           <div className="hero-buttons">
             <button><Link to="/register" className="register-btn">Register now</Link></button>
-            <button className="read-btn"> Read more → </button>
+            <button><Link to="/about" className="read-btn"> Read more →</Link> </button>
           </div>
       </div>
     </div>
