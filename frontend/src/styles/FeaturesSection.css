@@ -1,58 +1,81 @@
 .features-section {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   background: url('../assets/farm5.jpg') center/cover no-repeat;
-  background-attachment: fixed; /* optional parallax feel */
-  position: relative;
+  background-attachment: fixed;
   text-align: center;
+  position: relative;
   color: white;
-  z-index: 1;
+  /*padding-bottom: 5rem; !* gives breathing room *!*/
+}
+
+.features-section h2 {
+  color: antiquewhite;
 }
 
 .features-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  /*background: rgba(0, 0, 0, 0.4); !* dark overlay *!*/
+  background: rgba(0, 0, 0, 0.4); /* stronger overlay for contrast */
   z-index: 0;
 }
 
-
 .features-section h2 {
-  color: white;
+  position: relative;
+  font-size: 2rem;
   text-shadow: 1px 1px 2px black;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  z-index: 1;
 }
 
 .features-grid {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: auto;
+  z-index: 1;
 }
 
 .feature-card {
-  background: rgba(255, 255, 255, 0.1); /* translucent white */
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+  text-align: left;
   transition: transform 0.3s ease;
+  font-weight: bold;
+  color: #333;
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
 .feature-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
   color: #3d4cfc;
 }
 
 .feature-card p {
-  font-size: 0.9rem;
-  color: white;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
 }
+
+@media screen and (max-width: 768px) {
+  .overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .features-section {
+    padding: 3rem 1rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+}
+

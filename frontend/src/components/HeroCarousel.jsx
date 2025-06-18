@@ -34,12 +34,12 @@ const HeroCarousel = () => {
   {slides.map((bg, i) => (
     <div key={i} className="hero-slide">
       <img src={bg} alt={`Farm Slide ${i + 1}`} className="slide-image" />
-      <div className="overlay">
-        <h1>Empowering Farmers. Ending Losses. Securing Futures…</h1>
-        <div className="hero-buttons">
-          <button><Link to="/register" className="register-btn">Register now</Link></button>
-          <button className="read-btn"> Read more → </button>
-        </div>
+        <div className="overlay">
+          <h1>Empowering Farmers. Ending Losses. Securing Futures…</h1>
+          <div className="hero-buttons">
+            <button><Link to="/register" className="register-btn">Register now</Link></button>
+            <button className="read-btn"> Read more → </button>
+          </div>
       </div>
     </div>
   ))}

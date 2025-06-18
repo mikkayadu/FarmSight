@@ -13,31 +13,40 @@
 .hero-slider {
   position: relative;
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
 }
 
 .slide-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  display: flex;
   opacity: 0.9;
 }
 
 .hero-slide {
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 100vh;
   position: relative;
+}
+
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /*background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.9));*/
+  z-index: 1;
 }
 
 .overlay {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 2;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: antiquewhite;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 2rem;
   border-radius: 8px;
@@ -65,15 +74,19 @@
   cursor: pointer;
 }
 
+/*.register-btn {*/
+/*  background-color: #3d4cfc; !* deep blue *!*/
+/*  padding: 0.75rem 1.5rem;*/
+/*  border-radius: 5px;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/* Remove default link styles inside the button */
 .register-btn {
   background-color: #3d4cfc; /* deep blue */
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   cursor: pointer;
-}
-
-/* Remove default link styles inside the button */
-.register-btn {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -81,6 +94,7 @@
   width: 100%;
   border: none;
   outline: none;
+  z-index: 3;
 }
 
 /* Hover state */
@@ -99,3 +113,17 @@
   background-color: transparent;
   border: 1px solid white;
 }
+
+/*@media screen and (max-width: 768px) {*/
+/*  .overlay h1 {*/
+/*    font-size: 1.5rem;*/
+/*  }*/
+
+/*  .features-section {*/
+/*    padding: 3rem 1rem;*/
+/*  }*/
+
+/*  .feature-card {*/
+/*    padding: 1.5rem;*/
+/*  }*/
+/*}*/
