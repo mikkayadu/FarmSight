@@ -1,19 +1,20 @@
 .about-container {
   background: url('../assets/farm2.jpg') center/cover no-repeat fixed;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;   /* 🔥 fix: stack items vertically */
   align-items: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
+  gap: 4rem;
 }
 
 .about-container::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3); /* stronger overlay for contrast */
+  background: rgba(0, 0, 0, 0.0); /* stronger overlay for contrast */
   z-index: 0;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .about-card h1 {
-  font-size: 2.9rem;
+  font-size: 3rem;
   margin-bottom: 1.9rem;
   color: antiquewhite;
   text-shadow: 1px 1px 2px #000;
@@ -41,4 +42,102 @@
   font-size: 1.4rem;
   line-height: 1.7;
   margin-bottom: 1.5rem;
+}
+
+.team-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: transparent;
+  /*margin-top: 70rem;*/
+  /*margin: 100px auto;*/
+}
+
+.team-heading {
+  font-size: 3rem;
+  color: antiquewhite;
+  text-shadow: 1px 1px 2px #000;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  max-width: 200px;
+  width: 220px;
+  height: 290px;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid white;
+}
+
+.team-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: azure;
+}
+
+.team-card p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  /*color: #ccc;*/
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .about-card {
+    padding: 2rem 1.2rem;
+  }
+
+  .about-card h1 {
+    font-size: 2rem;
+  }
+
+  .about-card p {
+    font-size: 1.1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr 1fr; /* 2 cards side by side on tablet */
+    gap: 1rem;
+  }
+
+  .team-card {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .team-photo {
+    width: 80px;
+    height: 80px;
+  }
 }
