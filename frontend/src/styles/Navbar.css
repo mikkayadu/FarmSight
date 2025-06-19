@@ -106,3 +106,53 @@
   color: #e0e0e0;
   background-color: #1a1a40; /* deep dark blue/black */
 }
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Auth button container */
+.nav-auth {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Rules */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-left {
+    flex: 1;
+  }
+
+  .nav-auth {
+    display: none; /* optional: hide sign-in in mobile nav or move into dropdown */
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+}

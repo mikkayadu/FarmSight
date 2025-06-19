@@ -1,6 +1,7 @@
 .features-section {
   padding: 5rem 2rem;
-  background: url('../assets/farm5.jpg') center/cover no-repeat;
+  /*background: url('../assets/farm5.jpg') center/cover no-repeat;*/
+  background-color: floralwhite;
   background-attachment: fixed;
   text-align: center;
   position: relative;
@@ -9,14 +10,14 @@
 }
 
 .features-section h2 {
-  color: antiquewhite;
+  color: darkgreen;
 }
 
 .features-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* stronger overlay for contrast */
+  /*background: rgba(0, 0, 0, 0.4); !* stronger overlay for contrast *!*/
   z-index: 0;
 }
 

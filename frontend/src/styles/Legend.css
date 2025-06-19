@@ -1,0 +1,52 @@
+.legend-container {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.legend-container h4 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.legend-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.strip-section {
+  margin-top: 1.5rem;
+}
+
+.strip {
+  display: flex;
+  gap: 5px;
+}
+
+.strip-box {
+  height: 20px;
+  width: 25%;
+  border-radius: 4px;
+}
+
+.legend-labels {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin-top: 0.4rem;
+}

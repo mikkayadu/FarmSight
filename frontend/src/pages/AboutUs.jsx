@@ -4,6 +4,8 @@ import Farouk from "../assets/profile.jpg";
 import Me from "../assets/me.jpg";
 import Micheal from "../assets/profile.jpg";
 import Godwin from "../assets/profile.jpg";
+import Footer from "../components/Footer.jsx";
+import Navbar from "../components/Navbar.jsx";
 
 const teamMembers = [
   {
@@ -38,6 +40,8 @@ const teamMembers = [
 
 const AboutUs = () => {
   return (
+   <>
+    <Navbar />
     <div className="about-container">
       {/* Centered About Text Card */}
       <div className="about-card">
@@ -70,6 +74,8 @@ const AboutUs = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+   </>
   );
 };
 

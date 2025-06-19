@@ -10,6 +10,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Settings from "./pages/Settings.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
+import Dashboard from "./pages/DashBoard.jsx";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/about" element={<AboutUs />} />
-
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );

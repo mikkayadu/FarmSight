@@ -8,7 +8,7 @@
 /*}*/
 
 .register-container {
-  background: url('../assets/farm1.jpg') center/cover no-repeat;
+  background: url('../assets/farm7.jpg') center/cover no-repeat;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -21,7 +21,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.3); /* darkens the bg */
+  background-color: rgba(0, 0, 0, 0.5); /* darkens the bg */
   z-index: 1;
 }
 
