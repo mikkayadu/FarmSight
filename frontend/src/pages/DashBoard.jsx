@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Dashboard.css";
+import "../styles/DashBoard.css";
 import NDVIChart from "../components/NDVICharts.jsx";
 import FieldMap from "../components/FieldMap";
 import NDVILegend from "../components/NDVILegend";
