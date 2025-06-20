@@ -10,7 +10,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Settings from "./pages/Settings.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
-import Dashboard from "./pages/DashBoard.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
 
 function App() {
   return (
