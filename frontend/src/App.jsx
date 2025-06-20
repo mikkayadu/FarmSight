@@ -5,6 +5,7 @@ import HeroCarousel from "./components/HeroCarousel";
 import Navbar from "./components/Navbar";
 import FeaturesSection from "./components/FeaturesSection.jsx";
 import Footer from "./components/Footer.jsx";
+import ServicesOverview from "./components/ServicesOverview.jsx";
 
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -23,6 +24,7 @@ function App() {
               <Navbar />
               <HeroCarousel />
               <FeaturesSection />
+              <ServicesOverview />
               <Footer />
             </>
           }

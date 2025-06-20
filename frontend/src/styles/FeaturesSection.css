@@ -1,7 +1,8 @@
 .features-section {
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   /*background: url('../assets/farm5.jpg') center/cover no-repeat;*/
-  background-color: floralwhite;
+  /*background-color: floralwhite;*/
+  background-color: #fefae0;
   background-attachment: fixed;
   text-align: center;
   position: relative;
@@ -12,6 +13,21 @@
 .features-section h2 {
   color: darkgreen;
 }
+
+/*.features-section::after {*/
+/*  content: "";*/
+/*  display: block;*/
+/*  height: 100px;*/
+/*  margin-top: 2rem;*/
+/*  width: 2000px;*/
+/*  background: linear-gradient(*/
+/*    to bottom,*/
+/*    floralwhite 0%,*/
+/*    #e6f2dc 40%,*/
+/*    #b0d79c 70%,*/
+/*    darkgreen 100%*/
+/*  );*/
+/*}*/
 
 .features-section::before {
   content: "";
@@ -36,6 +52,7 @@
   gap: 2rem;
   max-width: 1200px;
   margin: auto;
+  margin-bottom: 0rem;
   z-index: 1;
 }
 

@@ -1,0 +1,122 @@
+.services-overview {
+  background-color: #fefae0;
+  padding: 4rem 2rem;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.services-overview h2 {
+  text-align: center;
+  color: darkgreen;
+  margin-bottom: 1rem;
+  font-family: "Times New Roman";
+  text-shadow: 1px 1px 2px black;
+  font-size: 2rem;
+}
+
+.overview-block ul {
+  margin-left: 3rem;
+}
+
+.sources-grid,
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.sources-grid div,
+.audience-grid div {
+  background: #ffffff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.features-summary ul {
+  list-style: none;
+  padding-left: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features-summary li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.features-summary li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: green;
+}
+
+.advantages-block {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.advantage-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.advantage-grid img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.comparison-block {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.compare-chart {
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.overview-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.overview-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+.overview-text ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.overview-image {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+.overview-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}

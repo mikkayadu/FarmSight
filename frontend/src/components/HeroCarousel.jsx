@@ -13,7 +13,7 @@ import "../styles/HeroCarousel.css";
 
 import farm1 from "../assets/farm1.jpg";
 import farm2 from "../assets/farm2.jpg";
-// import farm3 from "../assets/farm3.jpg";
+import farm3 from "../assets/farm3.jpg";
 
 const HeroCarousel = () => {
   const settings = {
@@ -27,7 +27,7 @@ const HeroCarousel = () => {
   };
 
   // const slides = [farm4, farm5, farm6];
-  const slides = [farm1, farm2];
+  const slides = [farm1, farm2, farm3];
 
   return (
     <Slider {...settings} className="hero-slider">
@@ -36,9 +36,10 @@ const HeroCarousel = () => {
       <img src={bg} alt={`Farm Slide ${i + 1}`} className="slide-image" />
         <div className="overlay">
           <h1>Empowering Farmers. Ending Losses. Securing Futures…</h1>
+          <p className="text">Get access to more crop and field insights than ever before. By combining data from scouting, weather, satellites, you get a complete view of your fields. Any time, anywhere.</p>
           <div className="hero-buttons">
             <button><Link to="/register" className="register-btn">Register now</Link></button>
-            <button><Link to="/about" className="read-btn"> Read more →</Link> </button>
+            <button><Link to="/about" className="read-btn"> Read more →</Link></button>
           </div>
       </div>
     </div>
