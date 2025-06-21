@@ -3,7 +3,12 @@ import "../styles/ServicesOverview.css";
 import api from "../assets/api_integrate.jpg";
 import easy from "../assets/easy-to-use.jpg";
 import compare from "../assets/comparison.jpg";
-import overview from "../assets/overview.jpg"
+import crop from "../assets/crop yield.jpg"
+import satellite from "../assets/satelite.jpg"
+import report from "../assets/report.jpg"
+import weather from "../assets/weater.jpg"
+import scouting from "../assets/scouting.jpg"
+import soil from "../assets/soil.jpg"
 
 const ServicesOverview = () => {
   return (
@@ -23,7 +28,7 @@ const ServicesOverview = () => {
           <div className="vertical-divider"></div>
 
           <div className="impact-text">
-            <h2>🌾 Real-World Impact</h2>
+            <h2>🌾Real-World Impact</h2>
             <p><strong>For Smallholder Farmers:</strong><br/>+10–30% yield boost, better decisions, income</p>
             <p><strong>For Extension Officers:</strong><br/>Better-targeted interventions</p>
             <p><strong>For Environment:</strong><br/>Encourages sustainable farming</p>
@@ -31,18 +36,43 @@ const ServicesOverview = () => {
           </div>
         </div>
 
-        {/* Data Sources */}
-        <div className="datasource-block">
-          <h2>Multiple Data Sources</h2>
-          <div className="sources-grid">
-            <div><strong>🛰️ Satellite</strong><p>Monitor large or remote areas</p></div>
-            <div><strong>🌦️ Weather</strong><p>Smart crop calendars & forecasts</p></div>
-            <div><strong>🧪 Soil</strong><p>Detect drought/overwatering conditions</p></div>
-            <div><strong>📋 Field Scouting</strong><p>Real-time field-level journaling</p></div>
-            <div><strong>📉 Yield</strong><p>Estimate productivity & harvests</p></div>
-            <div><strong>📑 Reports</strong><p>Digital scouting reports for proactive action</p></div>
+        {/* Multiple Data Sources */}
+      <div className="datasource-block">
+        <h2>Multiple Data Sources</h2>
+        <div className="sources-grid">
+          <div className="source-card">
+            <img src={satellite} alt="Satellite" />
+            <h4>Satellite</h4>
+            <p>Monitor large or remote areas</p>
+          </div>
+          <div className="source-card">
+            <img src={weather} alt="Weather" />
+            <h4>Weather</h4>
+            <p>Smart crop calendars & forecasts</p>
+          </div>
+          <div className="source-card">
+            <img src={soil} alt="Soil" />
+            <h4>Soil</h4>
+            <p>Detect drought/overwatering</p>
+          </div>
+          <div className="source-card">
+            <img src={scouting} alt="Scouting" />
+            <h4>Field Scouting</h4>
+            <p>Real-time field-level journaling</p>
+          </div>
+          <div className="source-card">
+            <img src={crop} alt="Yield" />
+            <h4>Yield</h4>
+            <p>Estimate productivity & harvests</p>
+          </div>
+          <div className="source-card">
+            <img src={report} alt="Reports" />
+            <h4>Reports</h4>
+            <p>Scouting reports for proactive action</p>
           </div>
         </div>
+      </div>
+
 
         {/* Platform Features */}
         <div className="features-summary">

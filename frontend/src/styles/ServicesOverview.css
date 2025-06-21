@@ -19,21 +19,66 @@
   margin-left: 3rem;
 }
 
+.overview-text p, li, h2 {
+    text-indent: 6rem;
+}
+
+
+.datasource-block {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+}
+
+.audience-block {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+}
+
 .sources-grid,
 .audience-grid {
+  padding: 0 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .sources-grid div,
 .audience-grid div {
   background: #ffffff;
-  padding: 1.2rem;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
+}
+
+.source-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.source-card img {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.source-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #3d4cfc;
+}
+
+.source-card:hover {
+  transform: translateY(-5px);
 }
 
 .features-summary ul {
@@ -61,6 +106,9 @@
   text-align: center;
 }
 
+.impact-text h2 {
+  text-indent: -2rem;
+}
 .advantage-grid {
   display: flex;
   flex-wrap: wrap;
@@ -145,5 +193,20 @@
 
   .impact-text p {
     padding-left: 0;
+    text-align: justify;
+  }
+
+  .datasource-block {
+    padding: 0 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .impact-text p br {
+    text-indent: 8rem;
+  }
+
+  .overview-text h2 p ul{
+    text-indent: -8rem; /* first line goes left */
+    margin-left: -8rem;
   }
 }

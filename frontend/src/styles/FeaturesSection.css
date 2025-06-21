@@ -14,20 +14,6 @@
   color: darkgreen;
 }
 
-/*.features-section::after {*/
-/*  content: "";*/
-/*  display: block;*/
-/*  height: 100px;*/
-/*  margin-top: 2rem;*/
-/*  width: 2000px;*/
-/*  background: linear-gradient(*/
-/*    to bottom,*/
-/*    floralwhite 0%,*/
-/*    #e6f2dc 40%,*/
-/*    #b0d79c 70%,*/
-/*    darkgreen 100%*/
-/*  );*/
-/*}*/
 
 .features-section::before {
   content: "";
