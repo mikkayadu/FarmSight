@@ -92,31 +92,58 @@
 .overview-row {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
   gap: 2rem;
   margin-bottom: 4rem;
 }
 
-.overview-text {
+.overview-text,
+.impact-text {
   flex: 1;
   min-width: 280px;
   max-width: 600px;
+  color: #222;
+  text-align: justify;
 }
 
 .overview-text ul {
   list-style: disc inside;
+  margin-top: 1rem;
   padding-left: 1rem;
 }
 
-.overview-image {
-  flex: 1;
-  min-width: 280px;
-  max-width: 500px;
+.vertical-divider {
+  width: 1px;
+  background-color: #ccc;
+  height: auto;
+  align-self: stretch;
 }
 
-.overview-image img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+.overview-text h2 {
+  text-align: justify;
+}
+
+.impact-text p {
+  text-align: justify;
+  padding-left: 10em;
+}
+
+@media screen and (max-width: 768px) {
+  .overview-row {
+    flex-direction: column;
+  }
+
+  .vertical-divider {
+    display: none;
+  }
+
+  .overview-text,
+  .impact-text {
+    max-width: 100%;
+  }
+
+  .impact-text p {
+    padding-left: 0;
+  }
 }
