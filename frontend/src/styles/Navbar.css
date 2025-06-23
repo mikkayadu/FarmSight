@@ -149,7 +149,8 @@
   }
 
   .nav-auth {
-    display: none; /* optional: hide sign-in in mobile nav or move into dropdown */
+    display: none;
+    margin-top: 1rem;
   }
 
   .navbar {

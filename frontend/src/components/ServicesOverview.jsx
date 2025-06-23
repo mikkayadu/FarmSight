@@ -88,7 +88,7 @@ const ServicesOverview = () => {
 
         {/* Audience */}
         <div className="audience-block">
-          <h2>Who This Is For</h2>
+          <h2>Who This Is For?</h2>
           <div className="audience-grid">
             <div><strong>🌱 Plant Specialists</strong><p>Improve yield while reducing input costs</p></div>
             <div><strong>🔬 Researchers</strong><p>Access reliable satellite and weather data</p></div>

@@ -14,6 +14,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+  /*padding-top: 80px;*/
 }
 
 .text {
@@ -73,6 +74,7 @@
 }
 
 
+
 /*.register-btn {*/
 /*  background-color: #3d4cfc; !* deep blue *!*/
 /*  padding: 0.75rem 1.5rem;*/
@@ -125,16 +127,52 @@
   color: #1a1a40;
 }
 
-/*@media screen and (max-width: 768px) {*/
-/*  .overlay h1 {*/
-/*    font-size: 1.5rem;*/
-/*  }*/
+@media screen and (max-width: 768px) {
+  .overlay {
+    padding: 1rem;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5); /* better readability */
+  }
 
-/*  .features-section {*/
-/*    padding: 3rem 1rem;*/
-/*  }*/
+  .overlay h1 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
 
-/*  .feature-card {*/
-/*    padding: 1.5rem;*/
-/*  }*/
-/*}*/
+  .text {
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .register-btn,
+  .read-btn {
+    width: 90%;
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .overlay h1 {
+    font-size: 1rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+
+  .register-btn,
+  .read-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

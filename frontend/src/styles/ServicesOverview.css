@@ -35,8 +35,9 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
 }
+
 
 .sources-grid,
 .audience-grid {
@@ -48,12 +49,19 @@
   margin-top: 2rem;
 }
 
-.sources-grid div,
 .audience-grid div {
-  background: #ffffff;
+  background: mintcream;
+  padding: 2rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: center;
+}
+.sources-grid div {
+  background: mintcream;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   text-align: center;
 }
 

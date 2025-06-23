@@ -2,6 +2,7 @@
   padding: 3rem 2rem;
   /*background: url('../assets/farm5.jpg') center/cover no-repeat;*/
   /*background-color: floralwhite;*/
+  /*font-family: 'Poppins', sans-serif;*/
   background-color: #fefae0;
   background-attachment: fixed;
   text-align: center;
@@ -43,7 +44,8 @@
 }
 
 .feature-card {
-  background: rgba(255, 255, 255, 0.85);
+  /*background: rgba(255, 255, 255, 0.85);*/
+  background-color: mintcream;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 6px 25px rgba(0,0,0,0.2);
