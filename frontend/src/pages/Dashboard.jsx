@@ -10,7 +10,7 @@ import Footer from "../components/Footer.jsx";
 const Dashboard = () => {
   return (
      <>
-      <Navbar/>
+      {/*<Navbar/>*/}
       <div className="dashboard-wrapper">
         <div className="dashboard-header">
           <h2>Welcome Back, Farmer Nana Yaa 👩🏽‍🌾</h2>
