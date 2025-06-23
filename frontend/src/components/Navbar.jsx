@@ -19,9 +19,7 @@ const Navbar = () => {
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Us</Link></li>
-          <li>
-              <li><a href="#services">Services</a></li>
-          </li>
+        <li><a href="#services">Services</a></li>
       </ul>
 
         <div className="nav-auth">
