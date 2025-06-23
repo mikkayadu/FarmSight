@@ -19,10 +19,12 @@ const Navbar = () => {
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/services">Services</Link></li>
+          <li>
+              <li><a href="#services">Services</a></li>
+          </li>
       </ul>
 
-      <div className="nav-auth">
+        <div className="nav-auth">
         <Link to="/login" className="sign-in-btn">Sign In</Link>
       </div>
     </nav>

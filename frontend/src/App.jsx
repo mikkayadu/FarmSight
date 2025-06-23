@@ -24,7 +24,9 @@ function App() {
               <Navbar />
               <HeroCarousel />
               <FeaturesSection />
-              <ServicesOverview />
+              <section id="services">
+                <ServicesOverview />
+              </section>
               <Footer />
             </>
           }
