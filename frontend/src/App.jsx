@@ -12,6 +12,10 @@ import Login from "./pages/Login";
 import Settings from "./pages/Settings.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
+import DashboardHome from "./pages/DashboardHome";
+import Yield from "./pages/Yield"; // You will create this soon
+import Market from "./pages/Market";
+import Insight from "./pages/Insight";
 
 function App() {
   return (
@@ -34,7 +38,13 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<AboutUs />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route index element={<DashboardHome />} />
+          <Route path="yield" element={<Yield />} />
+          <Route path="market" element={<Market />} />
+          <Route path="insight" element={<Insight />} />
+        </Route>
       </Routes>
     </Router>
   );

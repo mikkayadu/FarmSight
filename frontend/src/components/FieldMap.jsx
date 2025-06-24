@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/FieldMap.css";
 import { MapContainer, TileLayer, Polygon, Marker, Popup } from "react-leaflet";
 
 const FieldMap = () => {

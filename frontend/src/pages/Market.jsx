@@ -1,6 +1,6 @@
 import React from "react";
 
-const Insight = () => {
+const Market = () => {
   return (
     <div>
       <h2>🧠 Farm Insight</h2>
@@ -9,4 +9,4 @@ const Insight = () => {
   );
 };
 
-export default Insight;
+export default Market;

@@ -1,0 +1,71 @@
+/** Sidebar.css *!*/
+/*.hamburger {*/
+/*  position: fixed;*/
+/*  top: 1rem;*/
+/*  left: 1rem;*/
+/*  z-index: 1001;*/
+/*  background: black;*/
+/*  padding: 0.5rem;*/
+/*  border-radius: 5px;*/
+/*  cursor: pointer;*/
+/*  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+
+.hamburger {
+  position: fixed !important;
+  display: block !important;
+  top: 1rem !important;
+  left: 1rem !important;
+  z-index: 3000 !important;          /* keep it on top of every dashboard layer       */
+  background: black !important;    /* deep-blue pill, matches brand                 */
+  padding: 0.6rem 0.7rem !important;
+  border-radius: 6px !important;
+  border: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,.25) !important;
+}
+
+/* make the icon WHITE so it’s visible */
+.hamburger svg {
+  color: #fff !important;
+  font-size: 1.4rem !important;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100vh;
+  width: 250px;
+  background: darkgreen;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: left 0.3s ease;
+  z-index: 2000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
