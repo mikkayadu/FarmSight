@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import FeaturesSection from "./components/FeaturesSection.jsx";
 import Footer from "./components/Footer.jsx";
 import ServicesOverview from "./components/ServicesOverview.jsx";
+import SidebarWrapper from "./components/SidebarWrapper.jsx";
 
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -16,10 +17,12 @@ import DashboardHome from "./pages/DashboardHome";
 import Yield from "./pages/Yield"; // You will create this soon
 import Market from "./pages/Market";
 import Insight from "./pages/Insight";
+import Anomaly from "./pages/Anomaly.jsx";
 
 function App() {
   return (
     <Router>
+      <SidebarWrapper />
       <Routes>
         <Route
           path="/"
@@ -44,6 +47,7 @@ function App() {
           <Route path="yield" element={<Yield />} />
           <Route path="market" element={<Market />} />
           <Route path="insight" element={<Insight />} />
+          <Route path="anomaly" element={<Anomaly />} />
         </Route>
       </Routes>
     </Router>

@@ -13,7 +13,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="hamburger" onClick={toggleSidebar}>
+      <div className="sidebar-hamburger" onClick={toggleSidebar}>
         <FaBars size={24} />
       </div>
 
@@ -23,6 +23,7 @@ const Sidebar = () => {
         <NavLink to="/dashboard/yield" onClick={toggleSidebar}>Yield Forecast</NavLink>
         <NavLink to="/dashboard/market" onClick={toggleSidebar}>Market Trends</NavLink>
         <NavLink to="/dashboard/insight" onClick={toggleSidebar}>Farm Insight</NavLink>
+        <NavLink to="/dashboard/anomalyalert" onClick={toggleSidebar}>Anomaly Alert</NavLink>
       </div>
     </>
   );

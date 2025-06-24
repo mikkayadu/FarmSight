@@ -1,18 +1,4 @@
-/** Sidebar.css *!*/
-/*.hamburger {*/
-/*  position: fixed;*/
-/*  top: 1rem;*/
-/*  left: 1rem;*/
-/*  z-index: 1001;*/
-/*  background: black;*/
-/*  padding: 0.5rem;*/
-/*  border-radius: 5px;*/
-/*  cursor: pointer;*/
-/*  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);*/
-/*}*/
-
-
-.hamburger {
+.sidebar-hamburger {
   position: fixed !important;
   display: block !important;
   top: 1rem !important;
@@ -27,7 +13,7 @@
 }
 
 /* make the icon WHITE so it’s visible */
-.hamburger svg {
+.sidebar-hamburger svg {
   color: #fff !important;
   font-size: 1.4rem !important;
 }
