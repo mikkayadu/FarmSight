@@ -48,7 +48,7 @@ function App() {
           <Route path="yield" element={<Yield />} />
           <Route path="market" element={<Market />} />
           <Route path="insight" element={<Insight />} />
-          <Route path="anomaly" element={<Anomaly />} />
+          <Route path="anomalyalert" element={<Anomaly />} />
         </Route>
       </Routes>
     </Router>

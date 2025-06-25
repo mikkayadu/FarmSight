@@ -2,6 +2,7 @@
 import React from "react";
 import MiniCalendar from "../components/MiniCalendar";
 import "../styles/Yield.css";
+import Footer from "../components/Footer.jsx";
 
 const sampleData = [
   { crop: "Maize", sow: [0, 1], grow: [1, 5], harvest: [5, 6] },
@@ -12,6 +13,7 @@ const sampleData = [
 
 const Yield = () => {
   return (
+    <>
     <div className="yield-page">
       <div className="calendars">
         {[2024, 2025, 2026, 2027].map((year) => (
@@ -42,6 +44,8 @@ const Yield = () => {
         </ul>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

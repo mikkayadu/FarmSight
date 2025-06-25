@@ -1,0 +1,76 @@
+.anomaly-page {
+  padding: 6rem;
+  background: #fdfef5;
+  min-height: 100vh;
+}
+
+.anomaly-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert-btn {
+  background: #3d4cfc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.anomaly-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.anomaly-card {
+  flex: 1;
+  min-width: 280px;
+  background: #111;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.status.open {
+  font-weight: bold;
+  color: #f57c00;
+}
+
+.alert-history {
+  margin-top: 2rem;
+}
+
+.alert-history h3 {
+  margin-bottom: 0.5rem;
+}
+
+.alert-history ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.alert-history li {
+  margin: 0.4rem 0;
+}
+
+.badge {
+  background: #3d4cfc;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
+.anomaly-footer-img {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.anomaly-footer-img img {
+  width: 80px;
+  opacity: 0.8;
+}

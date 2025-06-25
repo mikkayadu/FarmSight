@@ -1,0 +1,43 @@
+.market-page {
+  padding: 6rem;
+  background: #e9efe4; /* light green from figma */
+  min-height: 100vh;
+}
+
+/*.market-filters h1 {*/
+/*    text-align: center;*/
+/*}*/
+
+.market-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.market-filters select,
+.compare-btn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-weight: 500;
+}
+
+.compare-btn {
+  background: #3d4cfc;
+  color: #fff;
+  border: none;
+}
+
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.chart-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+}
