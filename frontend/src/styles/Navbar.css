@@ -13,15 +13,36 @@
   color: white;
 }
 
-.nav-left {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
+/*.nav-left {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  line-height: 1.2;*/
+/*}*/
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  text-indent: -0rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-image {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 50px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
 }
 
 .tagline {
@@ -121,8 +142,60 @@
   align-items: center;
 }
 
+
+
+.profile-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-name {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: #3d4cfc;
+  border-radius: 5px;
+  color: white;
+}
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background-color: white;
+  color: #333;
+  border-radius: 6px;
+  padding: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 100;
+  min-width: 150px;
+}
+
+.profile-menu:hover .profile-dropdown {
+  display: block;
+}
+
+.profile-dropdown a,
+.profile-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: left;
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.profile-dropdown a:hover,
+.profile-dropdown button:hover {
+  color: #3d4cfc;
+}
+
+
 /* Responsive Rules */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .hamburger {
     display: block;
   }
@@ -157,3 +230,35 @@
     flex-wrap: wrap;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

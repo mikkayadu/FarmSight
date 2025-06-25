@@ -3,7 +3,7 @@ import "../styles/AboutUs.css";
 import Farouk from "../assets/profile.jpg";
 import Me from "../assets/me.jpg";
 import Micheal from "../assets/profile.jpg";
-import Godwin from "../assets/profile.jpg";
+import Godwin from "../assets/godwin.jpg";
 import Footer from "../components/Footer.jsx";
 import Navbar from "../components/Navbar.jsx";
 
@@ -13,28 +13,28 @@ const teamMembers = [
     role: "Frontend Developer",
     image: Me,
     institution: 'University of Ghana',
-    phone: '0570046841',
+    phone: '+233 570 046 841',
   },
   {
     name: "Farouk",
     role: "Backend Developer",
     image: Farouk,
     institution: 'University of Ghana',
-    phone: '0205164254',
+    phone: '+233 205 164 254',
   },
   {
     name: "Godwin",
     role: "UI/UX Designer",
     image: Godwin,
     institution: 'University of Ghana',
-    phone: '0505152231',
+    phone: '+233 505 152 231',
   },
   {
     name: "Michael",
     role: "AI/ML Developer",
     image: Micheal,
     institution: 'University of Ghana',
-    phone: '0502317890'
+    phone: '+233 502 317 890'
   },
 ];
 

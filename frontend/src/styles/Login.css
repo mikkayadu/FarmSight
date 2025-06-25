@@ -63,3 +63,34 @@ form button {
   margin-top: 1rem;
   font-size: 0.85rem;
 }
+
+form button:hover {
+  background-color: #2c3e80;
+  transition: background 0.3s;
+}
+
+/* Make card responsive on smaller screens */
+@media screen and (max-width: 600px) {
+  .login-card {
+    width: 90%;
+    padding: 3rem 2rem;
+    font-size: 1rem;
+  }
+
+  .login-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .login-card p {
+    font-size: 0.85rem;
+  }
+
+  form input {
+    font-size: 0.95rem;
+  }
+
+  form button {
+    font-size: 0.95rem;
+  }
+}
+
