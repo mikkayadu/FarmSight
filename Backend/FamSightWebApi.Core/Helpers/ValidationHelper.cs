@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FamSightWebApi.Core.Enums
+namespace FamSightWebApi.Core.Helpers
 {
-    public enum AlertType
+    internal class ValidationHelper
     {
-        ndvi_drop, drought, flood, other
     }
 }

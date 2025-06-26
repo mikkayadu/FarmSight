@@ -13,7 +13,7 @@ namespace FamSightWebApi.Core.Domain.Entities
         public Guid FieldId { get; set; }
         public Field Field { get; set; }
 
-        public string Type { get; set; } // ndvi_drop / drought / flood
+        public AlertType Type { get; set; } // ndvi_drop / drought / flood
         public string Message { get; set; }
         public AlertLevel AlertLevel { get; set; } // info / warning / critical
         public MessageMedium Medium { get; set; } // sms / whatsapp
