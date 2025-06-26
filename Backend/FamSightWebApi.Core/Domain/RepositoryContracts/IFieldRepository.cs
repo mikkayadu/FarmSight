@@ -17,6 +17,6 @@ namespace FamSightWebApi.Core.Domain.RepositoryContracts
         Task DeleteAsync(Field field);
         Task<bool> ExistsAsync(Guid fieldId);
         Task<IEnumerable<Field>> GetWithinBoundingBoxAsync(double lat, double lon, double radiusKm);
-        Task<Field> GetByCentroidAsync(double lat, double lng);
+        Task<Field?> GetByCentroidAsync(double lat, double lng);
     }
 }

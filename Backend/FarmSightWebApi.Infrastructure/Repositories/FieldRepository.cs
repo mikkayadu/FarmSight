@@ -58,13 +58,6 @@ namespace FarmSightWebApi.Infrastructure.Repositories
             return await _context.Fields.AnyAsync(f => f.Id == fieldId);
         }
 
-        public async Task<IEnumerable<Field>> GetByCentroidAsync(double lat, double lng)
-        {
-            return await _context.Fields
-                .Where(f => f.CenterLat == lat && f.CenterLng == lng)
-                .ToListAsync();
-        }
-
         public async Task<IEnumerable<Field>> GetWithinBoundingBoxAsync(double lat, double lng, double radiusKm)
         {
             // Approximation using lat/lng range (not accurate for large areas)
@@ -80,9 +73,13 @@ namespace FarmSightWebApi.Infrastructure.Repositories
                 .ToListAsync();
         }
 
-        Task<Field> IFieldRepository.GetByCentroidAsync(double lat, double lng)
+        public async Task<Field?> GetByCentroidAsync(double lat, double lng)
         {
-            throw new NotImplementedException();
+            return await _context.Fields
+                .FirstOrDefaultAsync(f =>
+                    Math.Abs(f.CenterLat - lat) < 0.00001 &&
+                    Math.Abs(f.CenterLng - lng) < 0.00001);
         }
+
     }
 }

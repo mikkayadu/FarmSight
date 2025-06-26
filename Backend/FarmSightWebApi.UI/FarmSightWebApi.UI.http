@@ -1,0 +1,6 @@
+@FarmSightWebApi.UI_HostAddress = http://localhost:5207
+
+GET {{FarmSightWebApi.UI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
