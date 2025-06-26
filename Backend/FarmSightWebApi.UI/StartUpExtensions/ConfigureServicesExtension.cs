@@ -1,5 +1,8 @@
 ﻿using FamSightWebApi.Core.Domain.RepositoryContracts;
+using FarmSightWebApi.Application.Services;
+using FarmSightWebApi.Core.ServiceContracts;
 using FarmSightWebApi.Infrastructure.DatabaseContext;
+using FarmSightWebApi.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,7 +17,9 @@ namespace FarmSightWebApi.UI
             services.AddControllers();
 
             //add services into IoC container
-            services.AddScoped<IFieldRepository, IFieldRepository>();
+            services.AddScoped<IFieldRepository, FieldRepository>();
+
+            services.AddScoped<IFieldService, FieldService>();
 
             services.AddDbContext<FarmSightDbContext>(options =>
             {
