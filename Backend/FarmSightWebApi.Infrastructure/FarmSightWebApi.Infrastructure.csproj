@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\FamSightWebApi.Core\FarmSightWebApi.Core.csproj" />
   </ItemGroup>
 
