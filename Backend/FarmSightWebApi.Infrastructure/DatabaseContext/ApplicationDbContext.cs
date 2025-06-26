@@ -27,72 +27,28 @@ namespace FarmSightWebApi.Infrastructure.DatabaseContext
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Farmer
-            modelBuilder.Entity<Farmer>()
-                .HasKey(u => u.Id);
-
-            modelBuilder.Entity<Farmer>()
-                .HasMany(u => u.Fields)
-                .WithOne(f => f.Farmer)
-                .HasForeignKey(f => f.UserId);
+            modelBuilder.Entity<Farmer>().ToTable("Farmers");
 
             // Field
-            modelBuilder.Entity<Field>()
-                .HasKey(f => f.Id);
-
-            modelBuilder.Entity<Field>()
-                .HasOne(f => f.CropCalendar)
-                .WithOne(c => c.Field)
-                .HasForeignKey<CropCalendar>(c => c.FieldId);
+            modelBuilder.Entity<Field>().ToTable("Fields");
 
             // EOData
-            modelBuilder.Entity<EOData>()
-                .HasKey(e => e.Id);
-
-            modelBuilder.Entity<EOData>()
-                .HasOne(e => e.Field)
-                .WithMany(f => f.EOData)
-                .HasForeignKey(e => e.FieldId);
+            modelBuilder.Entity<EOData>().ToTable("EOData");
 
             // Yield Forecast
-            modelBuilder.Entity<YieldForecast>()
-                .HasKey(y => y.Id);
-
-            modelBuilder.Entity<YieldForecast>()
-                .HasOne(y => y.Field)
-                .WithMany(f => f.YieldForecasts)
-                .HasForeignKey(y => y.FieldId);
+            modelBuilder.Entity<YieldForecast>().ToTable("Yield_Forecasts");
 
             // Alerts
-            modelBuilder.Entity<Alert>()
-                .HasKey(a => a.Id);
-
-            modelBuilder.Entity<Alert>()
-                .HasOne(a => a.Field)
-                .WithMany(f => f.Alerts)
-                .HasForeignKey(a => a.FieldId);
+            modelBuilder.Entity<Alert>().ToTable("Alerts");
 
             // Crop Calendar
-            modelBuilder.Entity<CropCalendar>()
-                .HasKey(c => c.Id);
+            modelBuilder.Entity<CropCalendar>().ToTable("CropCalendars");
 
             // Message Log
-            modelBuilder.Entity<MessageLog>()
-                .HasKey(m => m.Id);
-
-            modelBuilder.Entity<MessageLog>()
-                .HasOne(m => m.Farmer)
-                .WithMany(u => u.Messages)
-                .HasForeignKey(m => m.UserId);
-
-            modelBuilder.Entity<MessageLog>()
-                .HasOne(m => m.Field)
-                .WithMany()
-                .HasForeignKey(m => m.FieldId)
-                .IsRequired(false);
+            modelBuilder.Entity<MessageLog>().ToTable("Message_Logs");
 
             // Benchmark Snapshot
-            modelBuilder.Entity<BenchmarkSnapshot>()
-                .HasKey(b => b.Id);
+            modelBuilder.Entity<BenchmarkSnapshot>().ToTable("Benchmark_Snapshots");
 
             base.OnModelCreating(modelBuilder);
         }
