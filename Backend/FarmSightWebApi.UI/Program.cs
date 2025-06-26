@@ -1,25 +1,26 @@
+using FarmSightWebApi.UI;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.ConfigureServices(builder.Configuration);
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+
+//create application pipeline
+if (builder.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseDeveloperExceptionPage();
 }
 
-app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseHttpLogging();
 
+app.UseStaticFiles();
+app.UseRouting();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { } //make the auto-generated Program accessible programmatically
