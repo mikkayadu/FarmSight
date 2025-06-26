@@ -27,6 +27,8 @@ namespace FamSightWebApi.Core.Domain.Entities
 
         public double Lat4 { get; set; }
         public double Lng4 { get; set; }
+        public double CenterLat { get; set; }
+        public double CenterLng { get; set; }
         public double AreaHa { get; set; }
         public DateTime? StartDate { get; set; }
         public string Status { get; set; }

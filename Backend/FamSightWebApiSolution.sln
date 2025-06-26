@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamSightWebApi.UI", "Backend\FamSightWebApi.UI.csproj", "{24FEFEAC-14CF-4A36-A7E6-E661E8BAF003}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BE34BE55-51F3-4CBE-B1C6-2CF413DBF16E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E4DF18DC-7C7E-4E12-A145-983B881926BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamSightWebApi.Core", "FamSightWebApi.Core\FamSightWebApi.Core.csproj", "{0503FBA4-8756-4A87-A6F6-2D77ADA26C4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamSightWebApi.Core", "FamSightWebApi.Core\FamSightWebApi.Core.csproj", "{0503FBA4-8756-4A87-A6F6-2D77ADA26C4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmSightWebApi.Infrastructure", "FarmSightWebApi.Infrastructure\FarmSightWebApi.Infrastructure.csproj", "{4355AD35-0760-45BB-9724-7412FF25BBE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmSightWebApi.Infrastructure", "FarmSightWebApi.Infrastructure\FarmSightWebApi.Infrastructure.csproj", "{4355AD35-0760-45BB-9724-7412FF25BBE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{24FEFEAC-14CF-4A36-A7E6-E661E8BAF003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24FEFEAC-14CF-4A36-A7E6-E661E8BAF003}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24FEFEAC-14CF-4A36-A7E6-E661E8BAF003}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24FEFEAC-14CF-4A36-A7E6-E661E8BAF003}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0503FBA4-8756-4A87-A6F6-2D77ADA26C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0503FBA4-8756-4A87-A6F6-2D77ADA26C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0503FBA4-8756-4A87-A6F6-2D77ADA26C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,7 +30,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{24FEFEAC-14CF-4A36-A7E6-E661E8BAF003} = {BE34BE55-51F3-4CBE-B1C6-2CF413DBF16E}
 		{0503FBA4-8756-4A87-A6F6-2D77ADA26C4A} = {BE34BE55-51F3-4CBE-B1C6-2CF413DBF16E}
 		{4355AD35-0760-45BB-9724-7412FF25BBE4} = {BE34BE55-51F3-4CBE-B1C6-2CF413DBF16E}
 	EndGlobalSection

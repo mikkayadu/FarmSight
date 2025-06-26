@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FamSightWebApi.Core.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,8 +15,8 @@ namespace FamSightWebApi.Core.Domain.Entities
 
         public string Type { get; set; } // ndvi_drop / drought / flood
         public string Message { get; set; }
-        public string AlertLevel { get; set; } // info / warning / critical
-        public string Method { get; set; } // sms / whatsapp
+        public AlertLevel AlertLevel { get; set; } // info / warning / critical
+        public MessageMedium Medium { get; set; } // sms / whatsapp
         public DateTime SentAt { get; set; }
     }
 }
