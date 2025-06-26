@@ -3,6 +3,7 @@ using System;
 using FarmSightWebApi.Infrastructure.DatabaseContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FarmSightWebApi.Infrastructure.Migrations
 {
     [DbContext(typeof(FarmSightDbContext))]
-    partial class FarmSightDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250626233808_Add Email attribute to Farmer")]
+    partial class AddEmailattributetoFarmer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
