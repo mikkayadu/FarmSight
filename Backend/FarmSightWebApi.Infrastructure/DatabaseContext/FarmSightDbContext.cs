@@ -1,4 +1,6 @@
 ﻿using FarmSightWebApi.ApplicationCore.Domain.Entities;
+using FarmSightWebApi.ApplicationCore.Domain.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,12 +10,14 @@ using System.Threading.Tasks;
 
 namespace FarmSightWebApi.Infrastructure.DatabaseContext
 {
-    public class FarmSightDbContext : DbContext
+    public class FarmSightDbContext : IdentityDbContext<ApplicationUser>
     {
         public FarmSightDbContext(DbContextOptions options)
             : base(options)
         {
         }
+
+        public FarmSightDbContext() : base() { }
 
         public virtual DbSet<Farmer> Farmers { get; set; }
         public virtual DbSet<Field> Fields { get; set; }

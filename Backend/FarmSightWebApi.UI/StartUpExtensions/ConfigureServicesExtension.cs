@@ -1,11 +1,16 @@
-﻿using FarmSightWebApi.ApplicationCore.Domain.RepositoryContracts;
+﻿using FarmSightWebApi.ApplicationCore.Domain.Identity;
+using FarmSightWebApi.ApplicationCore.Domain.RepositoryContracts;
 using FarmSightWebApi.ApplicationCore.ServiceContracts;
 using FarmSightWebApi.ApplicationCore.Services;
 using FarmSightWebApi.Infrastructure.DatabaseContext;
 using FarmSightWebApi.Infrastructure.Repositories;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace FarmSightWebApi.UI
 {
@@ -30,6 +35,37 @@ namespace FarmSightWebApi.UI
             {
                 options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
             });
+
+            // Add Identity
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<FarmSightDbContext>()
+                .AddDefaultTokenProviders();
+
+            // JWT Settings
+            var jwtSettings = configuration.GetSection("Jwt");
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+
+                    ValidIssuer = jwtSettings["Issuer"],
+                    ValidAudience = jwtSettings["Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]!))
+                };
+            });
+
+            services.AddAuthorization();
+
 
             return services;
         }
