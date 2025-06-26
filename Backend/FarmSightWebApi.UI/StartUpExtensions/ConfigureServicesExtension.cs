@@ -1,6 +1,6 @@
-﻿using FamSightWebApi.Core.Domain.RepositoryContracts;
-using FarmSightWebApi.Application.Services;
-using FarmSightWebApi.Core.ServiceContracts;
+﻿using FarmSightWebApi.ApplicationCore.Domain.RepositoryContracts;
+using FarmSightWebApi.ApplicationCore.ServiceContracts;
+using FarmSightWebApi.ApplicationCore.Services;
 using FarmSightWebApi.Infrastructure.DatabaseContext;
 using FarmSightWebApi.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +20,11 @@ namespace FarmSightWebApi.UI
             services.AddScoped<IFieldRepository, FieldRepository>();
 
             services.AddScoped<IFieldService, FieldService>();
+
+            services.AddScoped<IFarmerService, FarmerService>();
+
+            services.AddScoped<IFarmerRepository, FarmerRepository>();
+
 
             services.AddDbContext<FarmSightDbContext>(options =>
             {

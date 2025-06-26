@@ -1,5 +1,5 @@
-﻿using FamSightWebApi.Core.Domain.Entities;
-using FamSightWebApi.Core.Domain.RepositoryContracts;
+﻿using FarmSightWebApi.ApplicationCore.Domain.Entities;
+using FarmSightWebApi.ApplicationCore.Domain.RepositoryContracts;
 using FarmSightWebApi.Infrastructure.DatabaseContext;
 using Microsoft.EntityFrameworkCore;
 using System;
