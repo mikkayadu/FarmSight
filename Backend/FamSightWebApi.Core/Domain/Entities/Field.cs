@@ -1,6 +1,9 @@
-﻿using NetTopologySuite.Geometries;
+﻿using FamSightWebApi.Core.Enums;
+using NetTopologySuite.Geometries;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,8 +13,10 @@ namespace FamSightWebApi.Core.Domain.Entities
 {
     public class Field
     {
+        [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
-        public Guid UserId { get; set; }
+        [ForeignKey(nameof(Farmer))]
+        public Guid FarmerId { get; set; }
         public Farmer Farmer { get; set; }
 
         public string Name { get; set; }
@@ -31,7 +36,7 @@ namespace FamSightWebApi.Core.Domain.Entities
         public double CenterLng { get; set; }
         public double AreaHa { get; set; }
         public DateTime? StartDate { get; set; }
-        public string Status { get; set; }
+        public FieldStatus Status { get; set; }
 
         public ICollection<EOData> EOData { get; set; }
         public ICollection<YieldForecast> YieldForecasts { get; set; }

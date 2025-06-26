@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FamSightWebApi.Core\FamSightWebApi.Core.csproj" />
+    <ProjectReference Include="..\FamSightWebApi.Core\FarmSightWebApi.Core.csproj" />
   </ItemGroup>
 
 </Project>
