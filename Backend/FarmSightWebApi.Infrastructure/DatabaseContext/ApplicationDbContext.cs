@@ -40,14 +40,6 @@ namespace FarmSightWebApi.Infrastructure.DatabaseContext
                 .HasKey(f => f.Id);
 
             modelBuilder.Entity<Field>()
-                .Property(f => f.Geometry)
-                .HasColumnType("geometry (polygon, 4326)");
-
-            modelBuilder.Entity<Field>()
-                .Property(f => f.Location)
-                .HasColumnType("geometry (point, 4326)");
-
-            modelBuilder.Entity<Field>()
                 .HasOne(f => f.CropCalendar)
                 .WithOne(c => c.Field)
                 .HasForeignKey<CropCalendar>(c => c.FieldId);

@@ -10,7 +10,6 @@
     <Folder Include="Exceptions\" />
     <Folder Include="ServiceContracts\" />
     <Folder Include="Services\" />
-    <Folder Include="RepositoryContracts\" />
   </ItemGroup>
 
   <ItemGroup>

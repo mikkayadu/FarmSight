@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FamSightWebApi.Core.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace FamSightWebApi.Core.Domain.Entities
         public Field Field { get; set; }
 
         public string Content { get; set; }
-        public string Medium { get; set; } // sms / whatsapp / api
+        public MessageMedium Medium { get; set; } // sms / whatsapp / api
         public DateTime SentAt { get; set; }
     }
 }
