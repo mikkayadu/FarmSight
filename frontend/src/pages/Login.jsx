@@ -8,19 +8,20 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    // Fake user logic (replace with real auth later)
-    const fakeUser = {
-      name: "Nana Yaa", // change this to dynamic later if needed
-      email: email,
-    };
+  const fakeUser = {
+    name: "Nana Yaa", // for demo
+    email: email,
+  };
 
-    // Save user to localStorage
-    localStorage.setItem("user", JSON.stringify(fakeUser));
+  // ✅ Simulate backend token response
+  const fakeToken = "demo-token";
 
-    // Redirect to dashboard
-    navigate("/dashboard");
+  localStorage.setItem("user", JSON.stringify(fakeUser));
+  localStorage.setItem("token", fakeToken); // 🔐 Add this line
+
+  navigate("/dashboard"); // ✅ Redirect
   };
 
   return (

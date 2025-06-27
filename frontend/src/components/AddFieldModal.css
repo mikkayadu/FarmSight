@@ -1,0 +1,16 @@
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.45);
+  display: flex; justify-content: center; align-items: center; z-index: 1100;
+}
+.modal-card {
+  background: #fff; width: 420px; padding: 1.5rem 2rem;
+  border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.field-form { display: grid; gap: 0.8rem; }
+.field-form label { display: flex; flex-direction: column; font-size: 0.9rem; }
+.field-form input, .field-form select {
+  padding: 0.5rem; border-radius: 6px; border: 1px solid #ccc;
+}
+.modal-buttons { display: flex; justify-content: flex-end; gap: 1rem; margin-top: 1rem; }
+.cancel-btn { background:#ddd; border:none; padding:0.5rem 1rem; border-radius:6px; }
+.save-btn   { background:#3d4cfc; color:#fff; border:none; padding:0.5rem 1rem; border-radius:6px; }
