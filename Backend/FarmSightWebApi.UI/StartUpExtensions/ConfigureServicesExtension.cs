@@ -50,6 +50,9 @@ namespace FarmSightWebApi.UI
 
             services.AddScoped<IBenchmarkSnapshotService, BenchmarkSnapshotService>();
 
+            services.AddScoped<IEODataFetchService, EODataFetchService>();
+            
+            services.AddHttpClient<EODataFetchService>();
 
             services.AddDbContext<FarmSightDbContext>(options =>
             {
