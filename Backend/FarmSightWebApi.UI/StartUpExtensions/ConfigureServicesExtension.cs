@@ -2,6 +2,7 @@
 using FarmSightWebApi.ApplicationCore.Domain.RepositoryContracts;
 using FarmSightWebApi.ApplicationCore.ServiceContracts;
 using FarmSightWebApi.ApplicationCore.Services;
+using FarmSightWebApi.Infrastructure.BackgroundServices;
 using FarmSightWebApi.Infrastructure.DatabaseContext;
 using FarmSightWebApi.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -50,6 +51,13 @@ namespace FarmSightWebApi.UI
 
             services.AddScoped<IBenchmarkSnapshotService, BenchmarkSnapshotService>();
 
+            services.AddScoped<IEODataFetchService, EODataFetchService>();
+
+            services.AddScoped<IEODataFetchService, EODataFetchService>();
+
+            services.AddHostedService<EODataIngestionJob>();
+
+            services.AddHttpClient<IEODataFetchService, EODataFetchService>();
 
             services.AddDbContext<FarmSightDbContext>(options =>
             {

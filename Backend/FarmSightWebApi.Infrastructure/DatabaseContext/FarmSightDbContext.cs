@@ -12,7 +12,7 @@ namespace FarmSightWebApi.Infrastructure.DatabaseContext
 {
     public class FarmSightDbContext : IdentityDbContext<ApplicationUser>
     {
-        public FarmSightDbContext(DbContextOptions options)
+        public FarmSightDbContext(DbContextOptions<FarmSightDbContext> options)
             : base(options)
         {
         }
