@@ -30,6 +30,13 @@ namespace FarmSightWebApi.UI
 
             services.AddScoped<IFarmerRepository, FarmerRepository>();
 
+            services.AddScoped<IEODataRepository, EODataRepository>();
+
+            services.AddScoped<IEODataService, EODataService>();
+
+            services.AddScoped<IYieldForecastRepository, YieldForecastRepository>();
+
+            services.AddScoped<IYieldForecastService, YieldForecastService>();
 
             services.AddDbContext<FarmSightDbContext>(options =>
             {

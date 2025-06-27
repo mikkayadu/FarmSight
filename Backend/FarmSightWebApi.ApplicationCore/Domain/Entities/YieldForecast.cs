@@ -1,22 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FarmSightWebApi.ApplicationCore.Domain.Entities
 {
     public class YieldForecast
     {
+        [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
+
+        [ForeignKey(nameof(Field))]
         public Guid FieldId { get; set; }
-        public Field Field { get; set; }
+        public Field FarmField { get; set; }
 
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public DateTime ForecastDate { get; set; }
+        public DateTime ForecastDate { get; set; }   // When this forecast was made
+        public DateTime PredictedHarvestDate { get; set; } // Estimated harvest window
 
-        public float ExpectedYield { get; set; } // tons/ha
-        public float Confidence { get; set; }
-        public string MarketTip { get; set; }
+        public float PredictedYieldTons { get; set; }
+        public string CropType { get; set; }
+        public string Notes { get; set; }
     }
 }
