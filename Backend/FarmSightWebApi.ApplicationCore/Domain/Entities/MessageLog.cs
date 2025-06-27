@@ -10,7 +10,7 @@ namespace FarmSightWebApi.ApplicationCore.Domain.Entities
     public class MessageLog
     {
         public Guid Id { get; set; } = Guid.NewGuid();
-        public Guid UserId { get; set; }
+        public Guid FarmerId { get; set; }
         public Farmer Farmer { get; set; }
 
         public Guid? FieldId { get; set; }

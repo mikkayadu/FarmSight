@@ -38,6 +38,19 @@ namespace FarmSightWebApi.UI
 
             services.AddScoped<IYieldForecastService, YieldForecastService>();
 
+            services.AddScoped<ICropCalendarRepository, CropCalendarRepository>();
+
+            services.AddScoped<ICropCalendarService, CropCalendarService>();
+
+            services.AddScoped<IAlertRepository, AlertRepository>();
+
+            services.AddScoped<IAlertService, AlertService>();
+
+            services.AddScoped<IBenchmarkSnapshotRepository, BenchmarkSnapshotRepository>();
+
+            services.AddScoped<IBenchmarkSnapshotService, BenchmarkSnapshotService>();
+
+
             services.AddDbContext<FarmSightDbContext>(options =>
             {
                 options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
