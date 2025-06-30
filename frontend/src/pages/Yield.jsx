@@ -2,7 +2,7 @@
 import React from "react";
 import MiniCalendar from "../components/MiniCalendar";
 import "../styles/Yield.css";
-import Footer from "../components/Footer.jsx";
+// import Footer from "../components/Footer.jsx";
 
 const sampleData = [
   { crop: "Maize", sow: [0, 1], grow: [1, 5], harvest: [5, 6] },
@@ -29,22 +29,22 @@ const Yield = () => {
       </div>
 
       <div className="sidebar-notes">
-        <h4>Key Points 🗝️</h4>
-        <ol>
+        <h4>Key Points <span>🗝️</span></h4>
+        <p>
           <li>Maize yield likely to peak mid-year</li>
           <li>Rain delays may affect rice in July</li>
           <li>Sorghum ideal for early planting</li>
-        </ol>
+        </p>
 
-        <h4>Recommended Crops / Plants 🌱</h4>
-        <ul>
+        <h4>Recommended Crops / Plants <span>🌱</span></h4>
+        <p>
           <li>Maize</li>
           <li>Sorghum</li>
           <li>Groundnut</li>
-        </ul>
+        </p>
       </div>
     </div>
-    <Footer/>
+    {/*<Footer/>*/}
     </>
   );
 };
