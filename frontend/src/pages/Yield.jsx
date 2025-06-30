@@ -44,6 +44,7 @@ const Yield = () => {
         </p>
       </div>
     </div>
+
     {/*<Footer/>*/}
     </>
   );

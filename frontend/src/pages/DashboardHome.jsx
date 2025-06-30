@@ -1,6 +1,7 @@
 // DashboardHome.jsx
 import React, { useEffect, useState } from "react";
 import "../styles/DashboardHome.css";
+import Footer from "../components/Footer.jsx";
 
 import NDVIChart from "../components/NDVICharts";
 import FieldMap from "../components/FieldMap";
@@ -122,6 +123,7 @@ const DashboardHome = () => {
         farmerId={farmerId}
         token={token}
       />
+    <Footer/>
     </>
   );
 };

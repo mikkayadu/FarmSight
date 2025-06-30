@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import RevenueChart from "../components/RevenueChart";
 import "../styles/Market.css";
+import Footer from "../components/Footer.jsx";
 
 const Market = () => {
   /* ───────────── STATE ───────────── */
@@ -25,6 +26,7 @@ const Market = () => {
 
   /* ───────────── RENDER ───────────── */
   return (
+    <>
     <div className="market-page">
       {/*  TOP BAR  */}
       <div className="market-filters">
@@ -77,6 +79,8 @@ const Market = () => {
         </div>
       </div>
     </div>
+     <Footer/>
+    </>
   );
 };
 
